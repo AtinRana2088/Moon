@@ -6,57 +6,28 @@ const app = express();
 const port = process.env.PORT || 443;
 
 app.get("/", (req, res) => {
-  res.send('<meta http-equiv="refresh" content="0; URL=/home"/>');
+  res.send('<meta http-equiv="refresh" content="0; URL=/invmoon"/>');
 });
 
-app.get("/home", (req, res) => {
+app.get("/invmoon", (req, res) => {
   res.send(
-    `<meta http-equiv="refresh" content="0; URL=https://discord.gg/1st-952570101784281139"/>`
+    `<meta http-equiv="refresh" content="0; URL=https://discord.com/api/oauth2/authorize?client_id=898435982775435264&permissions=6508997968&scope=bot%20applications.commands"/>`
   );
 });
 
-app.get("/painfuego", (req, res) => {
+app.get("discord", (req, res) => {
   res.send(
-    `<meta http-equiv="refresh" content="0; URL=https://github.com/painfueg0"/>`
+    `<meta http-equiv="refresh" content="0; URL=https://discord.gg/vFKaw3eRHu"/>`
   );
 });
 
-app.get("/flame", (req, res) => {
+app.get("/invmoon", (req, res) => {
   res.send(
-    `<meta http-equiv="refresh" content="0; URL=https://github.com/flame3301"/>`
+    `<meta http-equiv="refresh" content="0; URL="/>`
   );
 });
 
-app.get("/cloud", (req, res) => {
-  res.send(
-    `<meta http-equiv="refresh" content="0; URL=https://github.com/yuvrajkushwahh"/>`
-  );
-});
-
-app.get("/tutorial", (req, res) => {
-  res.send(
-    `<meta http-equiv="refresh" content="0; URL=https://youtu.be/6u8ejTFytNY"/>`
-  );
-});
-
-app.get("/fuego", (req, res) => {
-  res.send(
-    `<meta http-equiv="refresh" content="0; URL=https://discord.com/application-directory/1050423676689985606"/>`
-  );
-});
-
-app.get("/flare", (req, res) => {
-  res.send(
-    `<meta http-equiv="refresh" content="0; URL=https://discord.com/application-directory/1032300215664914523"/>`
-  );
-});
-
-app.get("/carli", (req, res) => {
-  res.send(
-    `<meta http-equiv="refresh" content="0; URL=https://github.com/MoonCarli"/>`
-  );
-});
 
 app.listen(port, () => {
-  console.log(`Loaded Web server | Port : (${port})`, "success");
+  console.log(`Loaded Web server | Port : (${port})`, "Success");
 });
