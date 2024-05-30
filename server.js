@@ -21,12 +21,6 @@ app.get("discord", (req, res) => {
   );
 });
 
-app.get("/invmoon", (req, res) => {
-  res.send(
-    `<meta http-equiv="refresh" content="0; URL="/>`
-  );
-});
-
 
 app.listen(port, () => {
   console.log(`Loaded Web server | Port : (${port})`, "Success");
