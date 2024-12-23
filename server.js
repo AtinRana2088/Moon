@@ -6,81 +6,29 @@ const app = express();
 const port = process.env.PORT || 443;
 
 app.get("/", (req, res) => {
-  res.send('<meta http-equiv="refresh" content="0; URL=/home"/>');
+  res.send('<meta http-equiv="refresh" content="0; URL=/discord"/>');
 });
 
-app.get("/home", (req, res) => {
+app.get("/discord", (req, res) => {
   res.send(
-    `<meta http-equiv="refresh" content="0; URL=https://discord.gg/1st-952570101784281139"/>`
+    `<meta http-equiv="refresh" content="0; URL=https://discord.gg/rdAjw9Ema9"/>`
   );
 });
 
-app.get("/painfuego", (req, res) => {
+app.get("/insta", (req, res) => {
   res.send(
-    `<meta http-equiv="refresh" content="0; URL=https://github.com/painfueg0"/>`
+    `<meta http-equiv="refresh" content="0; URL=https://www.instagram.com/repub1ic.discord"/>`
   );
 });
 
-app.get("/flame", (req, res) => {
+app.get("/bot", (req, res) => {
   res.send(
-    `<meta http-equiv="refresh" content="0; URL=https://github.com/flame3301"/>`
+    `<meta http-equiv="refresh" content="0; URL=https://discord.com/oauth2/authorize?client_id=898435982775435264&permissions=8&scope=bot%20applications.commands"/>`
   );
 });
 
-app.get("/cloud", (req, res) => {
+app.get("/vote", (req, res) => {
   res.send(
-    `<meta http-equiv="refresh" content="0; URL=https://github.com/cloud9here"/>`
+    `<meta http-equiv="refresh" content="0; URL=https://top.gg/bot/898435982775435264"/>`
   );
-});
-
-app.get("/minecraft", (req, res) => {
-  res.send(
-    `<meta http-equiv="refresh" content="0; URL=https://discord.gg/horizion"/>`
-  );
-});
-
-app.get("/tutorial", (req, res) => {
-  res.send(
-    `<meta http-equiv="refresh" content="0; URL=https://youtu.be/6u8ejTFytNY"/>`
-  );
-});
-
-app.get("/reddit", (req, res) => {
-  res.send(
-    `<meta http-equiv="refresh" content="0; URL=https://www.reddit.com/r/Codesforfun/"/>`
-  );
-});
-
-app.get("/fuego", (req, res) => {
-  res.send(
-    `<meta http-equiv="refresh" content="0; URL=https://discord.com/application-directory/1050423676689985606"/>`
-  );
-});
-
-app.get("/flare", (req, res) => {
-  res.send(
-    `<meta http-equiv="refresh" content="0; URL=https://discord.com/application-directory/1032300215664914523"/>`
-  );
-});
-
-app.get("/carli", (req, res) => {
-  res.send(
-    `<meta http-equiv="refresh" content="0; URL=https://github.com/MoonCarli"/>`
-  );
-});
-
-app.get("/mxtiy", (req, res) => {
-  res.send(
-    `<meta http-equiv="refresh" content="0; URL=https://github.com/NoReplyUI5"/>`
-  );
-});
-
-app.get("/mesuic", (req, res) => {
-  res.send(
-    `<meta http-equiv="refresh" content="0; URL=https://mesuic.vercel.app/invite"/>`
-  );
-});
-
-app.listen(port, () => {
-  console.log(`Loaded Web server | Port : (${port})`, "success");
 });
